@@ -7,7 +7,7 @@
 	Nenhum Contato cadastrado!
 </div>
 
-<p class="text-info" ng-show='contatos.length > 0'>Total de contatos: {{contatos.lenght}}</p>
+<p class="text-info" ng-show='contatos.length > 0'>Total de contatos: {{contatos.length}}</p>
 
 <table class="table table-hover">
 	<thead>
@@ -18,7 +18,7 @@
 	</thead>
 	<tbody>
 		<tr ng-repeat='contato in contatos'>
-			<td>{{contato.nome}}</td>
+			<td><a ng-href="#contato/{{contato._id}}">{{contato.nome}}</td>
 			<td>
 				<button class="btn btn-warning" ng-click="remover(contato)">Exclur</button>
 			</td>

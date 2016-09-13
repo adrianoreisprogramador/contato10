@@ -1,1 +1,1 @@
-angular.module('agenda', ['ngRoute']);
+angular.module('agenda', ['ngRoute', 'ngResource']);
